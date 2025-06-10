@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gomoku Game</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <h1>Gomoku Game</h1>
+  <div id="controls">
+    <select id="mode">
+      <option value="pvp">Player vs Player</option>
+      <option value="ai">Player vs Computer</option>
+    </select>
+    <button id="startBtn" onclick="startGame()">Start Game</button>
+    <button id="restartBtn" onclick="restartGame()" disabled>Restart</button>
+    <span id="score">🔴 0 - 🟢 0</span>
+  </div>
+
+  <div id="board"></div>
+
+  <div id="endScreen">
+    <div id="endMessage">Computer Win!</div>
+    <button onclick="restartGame()">Next</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
